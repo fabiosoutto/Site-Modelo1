@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Fabio Soutto Dev">
+	<meta name="description" content="Site modelo para negócios">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<meta name="keywords" content="programador, desenvolvedor, webdesigner">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Site Modelo 01</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo"><a href="index.html"><h2>Fabio Soutto Dev</h2></a></div>
+			<nav class="menu-desktop">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre</a>
+					</li>
+					<li class="selected">
+						<a href="contato.html">Contato</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="menu-mobile">
+				<h2><i class="fa fa-bars"></i></h2>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre</a>
+					</li>
+					<li class="selected">
+						<a href="contato.html">Contato</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="clear"></div>
+		</div>
+	</header>
+		<section style="background-image:url('images/img1.jpg');" class="title-page">
+		<div class="overlay__title-page"></div>
+		<div class="container">
+			<h2>Contato</h2>
+			<p>Quis non ad mollit duis deserunt sit amet eiusmod occaecat in consectetur magna commodo elit laborum magna cupidatat voluptate.</p>
+		</div><!--container-->
+	</section>
+	<section class="contato">
+		<div class="container">
+			<div class="w60 formulario">
+				<h2>Entre em contato que estaremos respondendo o mais breve possível!</h2>
+				<form method="post">
+					<div class="w50">
+						<input placeholder="Nome..." type="text" required />
+					</div>
+					<div class="w50">
+						<input placeholder="Sobrenome..." type="text" required />
+					</div>
+					<div class="w100">
+						<input placeholder="E-mail" type="email" required />
+					</div>
+					<div class="w100">
+						<textarea placeholder="Sua mensagem..."></textarea>
+					</div>
+					<div class="w100">
+						<input type="submit" name="acao" value="Enviar!">
+					</div>
+				</form>
+			</div>
+
+			<div class="w40 tags-form">
+				<h2><i class="fa fa-comment"></i> Fale com a nossa equipe!</h2>
+				<p>Teremos o maior prazer em buscar juntos, uma solução para o seu projeto.</p>
+
+				<p class="tag-contato"><i class="fa fa-twitter"></i> /FabioSoutto</p>
+				<p class="tag-contato"><i class="fa fa-instagram"></i> /FabioSouttoDev</p>
+				<p class="tag-contato"><i class="fa fa-linkedin"></i> /fabio-soutto-dev</p>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</section>
+	<footer class="footer1">
+		<div class="container">
+			<div class="w33">
+				<h2>Onde estamos?</h2>
+				<p><i class="fa fa-map-pin" aria-hidden="true"></i> Av. Lorem Ipsum, Nro 1274 - Gravataí/RS</p>
+				<p><i class="fa fa-phone" aria-hidden="true"></i> (51) 9999-9999</p>
+			</div>
+			<div class="w33">
+				<h2>Links Úteis</h2>
+				<a href="https://github.com/fabiosoutto" target="_blank">Fabio Soutto - GitHub</a>
+				<a href="https://www.linkedin.com/in/fabio-soutto-dev/" target="_blank">Fabio Soutto - LinkedIn</a>
+			</div>
+			<div class="w33">
+				<h2>Conecte-se conosco</h2>
+				<div class="group-icons">
+					<a href="https://twitter.com/FabioSoutto" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/fabiosouttodev/" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="https://fabiosouttodev.vercel.app/" target="_blank"><i class="fa fa-facebook"></i></a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+	<footer class="footer2">
+		<div class="container">
+			<p>&copy; 2022 | Fabio Soutto Dev | "In code we trust"</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$('nav.menu-mobile h2').click(function(){
+			$('nav.menu-mobile ul').slideToggle();
+		});
+	</script>
+</body>
+</html>
